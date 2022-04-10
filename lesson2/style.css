@@ -17,7 +17,12 @@
     text-decoration: none;
 }
 
-/* HEADER */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER=========================== */
 
 header{
     padding: 1rem 4rem;
@@ -58,42 +63,41 @@ header .header-logo img{
     font-size: 1.16rem;
 }
 
-/* HERO-SECTION */
+/* HERO-SECTION========================== */
 
 .hero-section{
     background-color: #fdf2e9;
     padding-bottom: 100px;
 }
 
-.hero{
-    max-width: 1280px;
-    margin: 0 auto;
+.hero-section .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
 }
 
-.hero .hero-content{
+.hero-section .hero-content{
     width: 48%;
 }
 
-.hero .hero-content .hero-title{
+.hero-section .hero-content .hero-title{
     font-size: 3.1rem;
     line-height: 1;
 }
 
-.hero .hero-content .hero-description{
+.hero-section .hero-content .hero-description{
     font-size: 1.2rem;
     line-height: 1.6;
     margin: 8% 0 9%;
 }
 
-.hero .hero-content .btn-box{
+.hero-section .hero-content .btn-box{
     display: flex;
     gap: 20px;
 }
 
-.hero .hero-content .btn-box .btn-outline{
+.hero-section .hero-content .btn-box .btn-outline{
     background-color: #fff;
     border: 3px solid transparent;
     padding: 1rem 2rem;
@@ -104,7 +108,7 @@ header .header-logo img{
     transition: 0.5s linear;
 }
 
-.hero .hero-content .btn-box .btn-outline:hover{
+.hero-section .hero-content .btn-box .btn-outline:hover{
     background-color: transparent;
     border: 3px solid #e67e22;
     transition: 0.5s linear;
@@ -137,12 +141,12 @@ header .header-logo img{
     object-fit: cover;
 }
 
-.hero .meal-delivered-text{
+.hero-section .meal-delivered-text{
     font-weight: 600;
     font-size: 1.2rem;
 }
 
-.hero .meal-delivered-text span{
+.hero-section .meal-delivered-text span{
     color: #e67e22;
 }
 
@@ -152,4 +156,146 @@ header .header-logo img{
 
 .hero-section .hero-image img{
     width: 100%;
+}
+
+/* FEATURED================================ */
+
+.featured-section{
+    padding: 50px 0 100px;
+}
+
+.featured-section h2{
+    color: gray;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.featured-section .featured-img-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.featured-section .featured-img-box .featured-img{
+    height: 40px;
+}
+
+.featured-section .featured-img-box .featured-img img{
+    height: 100%;
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+/* HOW IT WORKS SECTION=================== */
+
+/* .how-section{
+
+} */
+
+.how-section .how-heading{
+    margin-bottom: 100px;
+}
+
+.how-section .how-heading p{
+    color: #e67e22;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.how-section .how-heading h2{
+    font-size: 45px;
+}
+
+/* .how-section .how-main{
+
+} */
+
+.how-section .how-main .how-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.how-section .how-main .how-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.how-section .how-main .how-content,
+.how-section .how-main .how-img{
+    width: 50%;
+}
+
+.how-section .how-main .how-content .how-number{
+    font-size: 75px;
+    font-weight: bold;
+    color: #d1d1d1;
+}
+
+.how-section .how-main .how-content h3{
+    font-size: 30px;
+    padding: 0.6rem 0 2.2rem;
+}
+
+.how-section .how-main .how-content .how-description{
+    font-size: 18px;
+    line-height: 2;
+}
+
+.how-section .how-main .how-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-section .how-main .how-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-section .how-main .how-img img{
+    width: 35%;
+}
+
+.how-section .how-main .how-img::before{
+    width: 60%;
+    padding-bottom: 60%;
+    border-radius: 50%;
+    background: #fdf2e9;
+    z-index: -2;
+}
+
+.how-section .how-main .how-img::after{
+    width: 45%;
+    padding-bottom: 45%;
+    border-radius: 50%;
+    background: #fae5d3;
+}
+
+.how-section .how-main .how-img::before,
+.how-section .how-main .how-img::after{
+    content:'';
+    position: absolute;
+    z-index: -1;
+}
+
+/* MEALS==================================== */
+
+.meals-section .meals-heading{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.meals-section .meals-heading p{
+    color: #e67e22;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.meals-section .meals-heading h2{
+    font-size: 45px;
 }
