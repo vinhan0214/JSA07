@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    background: linear-gradient(to bottom, #ff512f, #dd2476);
+}
+
+.header-list{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.header-list h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+.header-list i{
+    font-size: 50px;
+}
+
+.header-list i .menu{
+    width: 200px;
+    height: 500px;
+    background-color: whitesmoke;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    border: 1px solid black;
+    transition: .2s linear;
+    padding: 5px;
+}
+
+.header-list i:hover .menu {
+    opacity: 1;
+    transition: .2s linear;
+}
+
+section {
+    width: 100%;
+    height: 83.5%;
+}
+
+.main-shop {
+    max-width: 1200px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    height: 100%;
+    box-shadow: 0 0 0.5em black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    column-gap: 20px;
+}
+
+.card{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    box-shadow: 0 0 0.5em black;
+}
+
+.card .photo1{
+    height: 50%;
+    background-image: url(https://product.hstatic.net/1000230642/product/02200den__5__fd9581c644424adbb6da81bdaaa05774_large.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card .photo2{
+    height: 50%;
+    background-image: url(https://salt.tikicdn.com/cache/400x400/ts/product/43/10/49/84fcdf165cfdda0532afa862730695dc.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card .photo3{
+    height: 50%;
+    background-image: url(https://salt.tikicdn.com/ts/tmp/f4/29/c6/56a54416dbfb23a56d7e7cd9002c17dd.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card .photo4{
+    height: 50%;
+    background-image: url(https://bigmarts.vn/pictures/picfullsizes/2021/10/06/twi1633505965.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card .detail-main{
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.card .detail-main h2{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.card .detail-main h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.card .detail-main h4{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.card .detail-main button{
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+    border: none;
+    background-color: rgb(229, 54, 54);
+    transition: .2s linear;
+}
+
+.card .detail-main button:hover{
+    transition: .2s linear;
+    background-color: rgb(182, 28, 28)
+}
+
+.product ,.product2 ,.product3 ,.product4{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    padding: 0 2px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.product2 ,.product3 ,.product4{
+    margin-top: 10px;
+}
+
+.product::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 25%;
+    height: 100%;
+    background-image: url(https://product.hstatic.net/1000230642/product/02200den__5__fd9581c644424adbb6da81bdaaa05774_large.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.product2::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 25%;
+    height: 100%;
+    background-image: url(https://salt.tikicdn.com/cache/400x400/ts/product/43/10/49/84fcdf165cfdda0532afa862730695dc.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.product3::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 25%;
+    height: 100%;
+    background-image: url(https://salt.tikicdn.com/ts/tmp/f4/29/c6/56a54416dbfb23a56d7e7cd9002c17dd.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.product4::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 25%;
+    height: 100%;
+    background-image: url(https://bigmarts.vn/pictures/picfullsizes/2021/10/06/twi1633505965.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.product::before{
+    content: "Name : Biti's Hunter X 2k19  Cost:1.472.000₫ Sold:50";
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 52%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+.product2::before{
+    content: "Name : Kasawwi M15  Cost:200.000₫ Sold:100";
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 52%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+.product3::before{
+    content: "Name : PAGINI PA2288  Cost:588.000₫ Sold:200";
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 52%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+.product4::before{
+    content: "Name : APRO 366  Cost:319.000₫ Sold:350";
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 52%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+.clear{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(222, 27, 27);
+    transition: .2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear:hover{
+    transition: .2s linear;
+    background-color: rgb(166, 23, 23);
+}
+
+.clear::after {
+    width: 100%;
+    content: "Dọn giỏ hàng";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
